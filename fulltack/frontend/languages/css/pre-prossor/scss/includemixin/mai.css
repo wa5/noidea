@@ -1,0 +1,27 @@
+h2 {
+  background-color: green;
+}
+
+#a {
+  background-color: red;
+  font-size: 50px;
+}
+
+#b {
+  background-color: blue;
+  font-size: 70px;
+}
+
+#c {
+  background-color: green;
+  font-size: 100px;
+}
+
+div button a {
+  background-color: chartreuse;
+}
+
+div button h1 {
+  background-color: coral;
+}
+/*# sourceMappingURL=mai.css.map */

@@ -1,0 +1,36 @@
+@import 'colors';
+
+
+
+
+
+@mixin lalita($gift1,$gift2){
+    background-color: $gift1;
+    font-size: $gift2;
+}
+
+h2{
+    background-color: $colR;
+}
+
+#a{
+   @include lalita(red,50px)
+}
+#b{
+    @include lalita(blue,70px)
+}
+
+#c{
+    @include lalita(green,100px)
+}
+
+
+div{
+
+    button{
+        a{ background-color: chartreuse;}
+        h1{
+            background-color: coral;
+        }
+    }
+}
