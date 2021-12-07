@@ -13,24 +13,17 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-       
-<style>
-#a{
-    font-size: 60px+20px;
-    background-color: red;
-}
-div #b{
-    font-size: 60px;
-    background-color: red;
-}
-</style>
-
-        <h1 id="a">hello</h1>
-        <div>   <h1 id="b">world</h1></div>
-     
-        <h1>india</h1>
-        <h1>bangalore</h1>
+       <button onclick="alert('im button being clicked')">click me</button>
         
-        <script src="" async defer></script>
+
+<div id="hook"></div>
+       <script>
+         var a=10
+         var b=20
+alert(a+b)
+console.log(a+b)
+document.getElementById("hook").innerHTML=a+b
+       </script>
+       
     </body>
 </html>
