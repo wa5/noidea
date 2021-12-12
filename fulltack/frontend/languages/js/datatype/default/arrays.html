@@ -1,9 +1,65 @@
-<script>
-    var name1="balaji"
-    var name2="varun"
-    var name3="ravi"
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <div>
+           <label for="">enter a string numer</label>
+           <input id="cap" type="text" value="">
+           <button onclick="capture()">click</button>
+       </div>
+        
+        <script>
+var arr3=[]
+function capture(){
+    var getdata=document.getElementById("cap").value
+    alert(getdata)
+    
+    arr3.push(getdata)
+    console.log(arr3)
+}
 
-var arr=["balaji","varun","ravi"]
-    console.log(arr)
-    console.log(name1)
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+            var name1="balaji"
+            var name2="varun"
+            var name3="ravi"
+        
+        var arr=["balaji1213","varun","ravi"]
+        
+        //array destructuring
+        var [balaji,varun,ravi]=arr
+          //  console.log(balaji)
+           // console.log(name1)
+        
+        
+        var arr1=["one","two","three"]
+        console.log(arr1)
+       // arr1.push("four")
+       // console.log(arr1)
+       var i=1
+        arr1.splice(0,i)
+        console.log("------",arr1)
+        </script>
+    </body>
+</html>
