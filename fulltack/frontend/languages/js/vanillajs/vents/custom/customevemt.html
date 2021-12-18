@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+      
+    </head>
+    <body>
+     <button>clicks</button>
+     <br>
+     <h1>result</h1>
+        <button id="root">blavlabla</button>
+        <script>
+            var btntag=document.querySelector('button')
+            var result=document.querySelector('h1')
+
+
+            btntag.addEventListener('click',()=>{
+                let data={
+                    name:'balaji',
+                    backgroundColor:'red',
+                    color:'white'
+                }
+                myeventcreator(data)
+            })
+            function  myeventcreator(data){
+                var myevent=new CustomEvent('sammangi',{
+                    detail:data
+                })
+                result.dispatchEvent(myevent)
+            }
+
+            result.addEventListener('sammangi',(e)=>{
+       var {name,backgroundColor,color}=e.detail
+result.innerHTML=name
+result.style.backgroundColor=backgroundColor
+result.style.color=csolor
+            })
+
+
+        </script>
+    </body>
+</html>
