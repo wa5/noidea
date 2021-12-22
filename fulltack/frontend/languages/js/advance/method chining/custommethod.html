@@ -1,0 +1,28 @@
+<script>
+
+class Emp{
+constructor(name){
+    this.name=name
+}
+
+empname(){
+    return this.name
+}
+
+login(){ 
+console.log(`${this.name} just loged in`)
+return this
+}
+logout(){
+    console.log(`${this.name} just loged out`)
+    return this
+}
+
+}
+
+var Sneha=new Emp("snaha")
+Sneha.login().logout()
+
+
+
+</script>

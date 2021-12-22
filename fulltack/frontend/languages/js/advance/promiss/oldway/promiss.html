@@ -1,0 +1,29 @@
+<script>
+
+function  treat(){
+
+    return new Promise((fullfulled,notfullfill)=>{
+        setTimeout(() => {
+            
+const error=true
+if(!error){
+    fullfulled("thank u for treat viky")
+}else{
+    notfullfill("very y no treat")
+}
+
+        }, 2000);
+    })
+}
+
+
+treat().then((data)=>{
+    console.log(data)
+})
+
+treat().catch((data)=>{
+    console.log(data)
+})
+
+
+</script>
