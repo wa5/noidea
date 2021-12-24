@@ -1,0 +1,19 @@
+<script>
+
+
+
+function Emp(name,salary,id){
+this.name=name
+this.salary=salary
+this.id=id
+let bonus=1000
+this.calTotalSalary=()=>{
+    console.log(this.salary+bonus)
+}
+}
+
+var venu=new Emp("venu",20000,445)
+console.log(venu.salary)
+console.log(venu.bonus)
+venu.calTotalSalary()
+</script>

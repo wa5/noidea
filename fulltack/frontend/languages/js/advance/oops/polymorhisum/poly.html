@@ -1,0 +1,32 @@
+<script>
+
+//method ovveriding 
+//overloading
+
+class Humans{
+    constructor(){
+        this.eyes=2
+        this.ers=2
+        this.nose=1
+    }
+
+languge(){
+    console.log('mix languges')
+}
+
+}
+class MoonHumans extends Humans{//single level inharitance
+    languge(b,c){
+        console.log(b,c)
+    }
+   
+   
+   
+}
+var sneha=new MoonHumans()
+
+sneha.languge("hello",6)
+
+
+</script>
+
